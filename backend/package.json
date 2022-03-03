@@ -1,0 +1,36 @@
+{
+  "name": "book-manager-backend",
+  "version": "0.1.0",
+  "description": "The backend for the MERN stack boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "lint": "eslint .",
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand --forceExit --detectOpenHandles"
+  },
+  "author": "Yessergire Mohamed",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb-memory-server": "^8.4.0",
+    "mongodb-memory-server-core": "^8.4.0",
+    "mongoose": "^6.2.4"
+  },
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "latest"
+    }
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^27.5.1",
+    "lodash": "^4.17.21",
+    "supertest": "^6.2.2"
+  }
+}

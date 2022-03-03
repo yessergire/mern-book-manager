@@ -1,0 +1,13 @@
+{
+  "name": "book-manager",
+  "version": "0.1.0",
+  "author": "Yessergire Mohamed",
+  "license": "ISC",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "build": "cd frontend && react-scripts build && mv build ../backend"
+  },
+  "dependencies": {
+    "react-scripts": "3.0.1"
+  }
+}
